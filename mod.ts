@@ -45,7 +45,7 @@ const providerMethods: Record<
  * release contains 3 assets, 'hi-1', 'hi-2', and '3', passing 'hi' as the part
  * will only return 'hi-1' and 'hi-2'
  */
-export default async function getRelease(options: { provider: string; user: string; repo: string; part?: string }) {
+export default async function getReleaseURL(options: { provider: string; user: string; repo: string; part?: string }) {
     const providerNormalized = normalize(options.provider)
     if (!(providerNormalized in providerMethods)) {
         throw new Error("Invalid provider")

@@ -1,19 +1,19 @@
 <div align="center">
-    <img src="assets/logo.svg" width="400" height="400" alt="get_release illustration">
-    <h1>Get Release</h1>
+    <img src="assets/logo.svg" width="400" height="400" alt="cloud download to man holding cup illustration">
+    <h1>Get Release URL</h1>
     <p>
         <b>Get the latest release URL from any hosting provider. Supports pattern matching</b>
     </p>
     <p>
-        <img alt="build status" src="https://img.shields.io/github/workflow/status/KhushrajRathod/getRelease/Deno?label=checks" >
-        <img alt="language" src="https://img.shields.io/github/languages/top/KhushrajRathod/getRelease" >
-        <img alt="code size" src="https://img.shields.io/github/languages/code-size/KhushrajRathod/getRelease">
-        <img alt="issues" src="https://img.shields.io/github/issues/KhushrajRathod/getRelease" >
-        <img alt="license" src="https://img.shields.io/github/license/KhushrajRathod/getRelease">
-        <img alt="version" src="https://img.shields.io/github/v/release/KhushrajRathod/getRelease">
+        <img alt="build status" src="https://img.shields.io/github/workflow/status/KhushrajRathod/getReleaseURL/Deno?label=checks" >
+        <img alt="language" src="https://img.shields.io/github/languages/top/KhushrajRathod/getReleaseURL" >
+        <img alt="code size" src="https://img.shields.io/github/languages/code-size/KhushrajRathod/getReleaseURL">
+        <img alt="issues" src="https://img.shields.io/github/issues/KhushrajRathod/getReleaseURL" >
+        <img alt="license" src="https://img.shields.io/github/license/KhushrajRathod/getReleaseURL">
+        <img alt="version" src="https://img.shields.io/github/v/release/KhushrajRathod/getReleaseURL">
     </p>
     <p>
-        <b><a href="https://deno.land/x/get_release">View on deno.land</a></b>
+        <b><a href="https://deno.land/x/get_release_url">View on deno.land</a></b>
     </p>
     <br>
     <br>
@@ -33,9 +33,9 @@
 ## Usage
 
 ```ts
-import getRelease from "https://deno.land/x/get_release@1.0.0/mod.ts"
+import getReleaseURL from "https://deno.land/x/get_release_url@1.0.0/mod.ts"
 
-const urls = await getRelease({
+const urls = await getReleaseURL({
     provider: "github",
     user: "phhusson",
     repo: "treble_experimentations",
@@ -52,9 +52,9 @@ for (const url of urls) {
 Default supported providers are [GitHub](https://github.com) and [BitBucket](https://bitbucket.org). You can add custom provider functions using `addProviderMethod` (PRs for more defaults are welcome!)
 
 ```ts
-import getRelease, {
+import getReleaseURL, {
     addProviderMethod,
-} from "https://deno.land/x/get_release@1.0.0/mod.ts"
+} from "https://deno.land/x/get_release_url@1.0.0/mod.ts"
 
 const customGithubProvider = async (
     { user, repo, part = "" }: { user: string; repo: string; part?: string },
@@ -75,7 +75,7 @@ const customGithubProvider = async (
 
 addProviderMethod("github", customGithubProvider)
 
-await getRelease({
+await getReleaseURL({
     provider: "github",
     user: "phhusson",
     repo: "treble_experimentations",
@@ -85,20 +85,20 @@ await getRelease({
 
 ### API
 
-See [generated documentation](https://doc.deno.land/https/deno.land/x/get_release@1.0.0/mod.ts)
+See [generated documentation](https://doc.deno.land/https/deno.land/x/get_release_url@1.0.0/mod.ts)
 
 ## CLI
 
 ### Quickstart
 
 ```bash
-deno run --allow-net https://deno.land/x/get_release@1.0.0/get-release.ts github phhusson treble_experimentations arm64-aonly
+deno run --allow-net https://deno.land/x/get_release_url@1.0.0/get-release-url.ts github phhusson treble_experimentations arm64-aonly
 ```
 
 ### Installation
 
 ```bash
-deno install --allow-net https://deno.land/x/get_release@1.0.0/get-release.ts
+deno install --allow-net https://deno.land/x/get_release_url@1.0.0/get-release-url.ts
 ```
 
 ### Running
@@ -119,9 +119,9 @@ Usage: get-release (github|bitbucket) user repo [partofreleasefile]
 
 ## Supporters
 
-[![Stargazers repo roster for @KhushrajRathod/getRelease](https://reporoster.com/stars/KhushrajRathod/getRelease)](https://github.com/KhushrajRathod/getRelease/stargazers)
+[![Stargazers repo roster for @KhushrajRathod/getReleaseURL](https://reporoster.com/stars/KhushrajRathod/getReleaseURL)](https://github.com/KhushrajRathod/getReleaseURL/stargazers)
 
-[![Forkers repo roster for @KhushrajRathod/getRelease](https://reporoster.com/forks/KhushrajRathod/getRelease)](https://github.com/KhushrajRathod/getRelease/network/members)
+[![Forkers repo roster for @KhushrajRathod/getReleaseURL](https://reporoster.com/forks/KhushrajRathod/getReleaseURL)](https://github.com/KhushrajRathod/getReleaseURL/network/members)
 
 ## Related
 
