@@ -5,12 +5,12 @@
         <b>Get the latest release URL from any hosting provider. Supports pattern matching</b>
     </p>
     <p>
-        <img alt="build status" src="https://img.shields.io/github/workflow/status/KhushrajRathod/getReleaseURL/Deno?label=checks" >
-        <img alt="language" src="https://img.shields.io/github/languages/top/KhushrajRathod/getReleaseURL" >
-        <img alt="code size" src="https://img.shields.io/github/languages/code-size/KhushrajRathod/getReleaseURL">
-        <img alt="issues" src="https://img.shields.io/github/issues/KhushrajRathod/getReleaseURL" >
-        <img alt="license" src="https://img.shields.io/github/license/KhushrajRathod/getReleaseURL">
-        <img alt="version" src="https://img.shields.io/github/v/release/KhushrajRathod/getReleaseURL">
+        <img alt="build status" src="https://img.shields.io/github/workflow/status/khrj/get-release-url/Deno?label=checks" >
+        <img alt="language" src="https://img.shields.io/github/languages/top/khrj/get-release-url" >
+        <img alt="code size" src="https://img.shields.io/github/languages/code-size/khrj/get-release-url">
+        <img alt="issues" src="https://img.shields.io/github/issues/khrj/get-release-url" >
+        <img alt="license" src="https://img.shields.io/github/license/khrj/get-release-url">
+        <img alt="version" src="https://img.shields.io/github/v/release/khrj/get-release-url">
     </p>
     <p>
         <b><a href="https://deno.land/x/get_release_url">View on deno.land</a></b>
@@ -119,10 +119,10 @@ Usage: get-release (github|bitbucket) user repo [partofreleasefile]
 
 ## Supporters
 
-[![Stargazers repo roster for @KhushrajRathod/getReleaseURL](https://reporoster.com/stars/KhushrajRathod/getReleaseURL)](https://github.com/KhushrajRathod/getReleaseURL/stargazers)
+[![Stargazers repo roster for @khrj/get-release-url](https://reporoster.com/stars/khrj/get-release-url)](https://github.com/khrj/get-release-url/stargazers)
 
-[![Forkers repo roster for @KhushrajRathod/getReleaseURL](https://reporoster.com/forks/KhushrajRathod/getReleaseURL)](https://github.com/KhushrajRathod/getReleaseURL/network/members)
+[![Forkers repo roster for @khrj/get-release-url](https://reporoster.com/forks/khrj/get-release-url)](https://github.com/khrj/get-release-url/network/members)
 
 ## Related
 
-- [Deno modules](https://github.com/KhushrajRathod/DenoModules)
+- [Deno modules](https://github.com/khrj/deno-modules)

@@ -4,15 +4,15 @@ import getRelease, { addProviderMethod } from "./mod.ts"
 
 Deno.test("Fetch all assets", async () => {
     const correct = [
-        "https://github.com/KhushrajRathod/KhushrajRathod/releases/download/1.0.0/3.txt",
-        "https://github.com/KhushrajRathod/KhushrajRathod/releases/download/1.0.0/hi-1.txt",
-        "https://github.com/KhushrajRathod/KhushrajRathod/releases/download/1.0.0/hi-2.txt",
+        "https://github.com/khrj/khrj/releases/download/1.0.0/3.txt",
+        "https://github.com/khrj/khrj/releases/download/1.0.0/hi-1.txt",
+        "https://github.com/khrj/khrj/releases/download/1.0.0/hi-2.txt",
     ].sort()
 
     const urls = await getRelease({
         provider: "github",
-        user: "KhushrajRathod",
-        repo: "KhushrajRathod",
+        user: "khrj",
+        repo: "khrj",
     })
 
     assertEquals(correct, urls.sort())
@@ -20,14 +20,14 @@ Deno.test("Fetch all assets", async () => {
 
 Deno.test("Fetch matched assets", async () => {
     const correct = [
-        "https://github.com/KhushrajRathod/KhushrajRathod/releases/download/1.0.0/hi-1.txt",
-        "https://github.com/KhushrajRathod/KhushrajRathod/releases/download/1.0.0/hi-2.txt",
+        "https://github.com/khrj/khrj/releases/download/1.0.0/hi-1.txt",
+        "https://github.com/khrj/khrj/releases/download/1.0.0/hi-2.txt",
     ].sort()
 
     const urls = await getRelease({
         provider: "github",
-        user: "KhushrajRathod",
-        repo: "KhushrajRathod",
+        user: "khrj",
+        repo: "khrj",
         part: "hi",
     })
 
